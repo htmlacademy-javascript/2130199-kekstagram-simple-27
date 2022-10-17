@@ -1,15 +1,16 @@
-function getRandomInRange(min, max) {
+function getRandomInteger(min, max) {
+
+  if ((typeof min !== 'number' || typeof max !== 'number') || ((min === max) || (min > max) || (min < 0) || (max < 0))){
+    return NaN;
+  }
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-getRandomInRange(1, 10);
+getRandomInteger('',1);
 
 
-function getMaxLength(str, maxlength) {
-  if (str.length < maxlength) {
-    return true;
-  } else {
-    return false;
-  }
+function checkStringMaxLength(str, maxlength) {
+  return str.length <= maxlength;
 }
-getMaxLength('', 4 );
+checkStringMaxLength('tretert', 4 );
+
