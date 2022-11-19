@@ -2,7 +2,7 @@ import './util.js';
 import './data.js';
 import {createArray} from './data.js';
 
-console.log(createArray());
+// console.log(createArray());
 
 function getRandomInteger(min, max) {
 
