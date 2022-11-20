@@ -13,5 +13,11 @@ function getRandomArrayElement(array){
 }
 
 
-export {getRandomArrayElement};
-export {getRandomPositiveInteger};
+function checkStringMaxLength(str, maxlength) {
+  return str.length <= maxlength;
+}
+
+
+export {getRandomArrayElement, getRandomPositiveInteger, checkStringMaxLength};
+
+

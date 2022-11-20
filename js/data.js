@@ -1,9 +1,10 @@
-import {getRandomArrayElement} from './util.js';
-import {getRandomPositiveInteger} from '/util.js';
+import {getRandomArrayElement, getRandomPositiveInteger} from './util.js';
+
 const MIN_LIKES = 15;
 const MAX_LIKES = 200;
 const MIN_COMMENTS = 0;
 const MAX_COMMENTS = 200;
+const POSTS_COUNT = 25;
 
 const postDescriptions = [
   'Всё отлично!',
@@ -23,6 +24,6 @@ function generatePost(_, index){
   };
 }
 
-const createArray = () => Array.from({length:25}, generatePost);
+const generatePosts = () => Array.from({length:POSTS_COUNT}, generatePost);
 
-export {createArray};
+export {generatePosts};
